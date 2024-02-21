@@ -1,0 +1,77 @@
+/* font-family: 'Anton', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Jost', sans-serif; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --anton-font:'Anton', sans-serif;
+    --main-purple: #9b22ff;
+    font-size: var(--anton-font) ;
+    text-transform: capitalize;
+}
+
+body.dark {
+    background: #171717;
+    color: #ffffff;
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 50px;
+    background-color: var(--main-purple);
+    height: 7px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+button , .btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+input , textarea {
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+.purple-btn {
+    background-color: var(--main-purple);
+    width: 100%;
+    font-size: 1.875em;
+    padding: 0.5em;
+    color: #ffffff;
+    text-transform: capitalize;
+    border-radius: .35em;
+    height: fit-content;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ease-1s {
+    transform: 1s;
+}
+
+.ease-05s {
+    transition: .5s;
+}
