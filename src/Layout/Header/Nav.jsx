@@ -15,7 +15,7 @@ const Nav = () => {
                 {
 
                     pages.map(page => (
-                        <li className=' inline-block text-xl' key={page.name}>
+                        <li className=' inline-block font-medium text-xl' key={page.name}>
                             <Link to={page.href}>{page.name}</Link>
                         </li>
             

@@ -4,10 +4,10 @@ import ContactInfos from '../Features/Contact/ContactInfos'
 
 const Contact = () => {
     return (
-        <div className='bg-main-purple bg-opacity-30'>
-            <div className=' w-full md:h-screen flex justify-center items-center h-fit container !pt-[100px]'>
+        <section>
+            <div className=' w-full md:min-h-[80vh] flex justify-center items-center h-fit container !pt-[100px]'>
                 
-                <div className='w-full gap-5 h-fit bg-white md:h-[60vh] p-4 mt-4 flex md:flex-row flex-col'>
+                <div className='w-full gap-5 h-fit p-4 mt-4 flex md:flex-row flex-col'>
 
                     <ContactInfos/>
                     <ContactFeild/>
@@ -15,7 +15,7 @@ const Contact = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
         
     )
 }

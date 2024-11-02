@@ -11,7 +11,7 @@ const ProductPage = () => {
     const product = products.find(product => product.id === +productId)
 
     return (
-        <div className={`!pt-[150px] ${!product && "h-screen"} gap-y-24 gap-x-14 md:flex-row flex-col flex container`}>
+        <div className={`!pt-[150px] ${!product && "h-screen"} min-h-[90vh] items-center gap-y-24 gap-x-14 md:flex-row flex-col flex container`}>
             {
                 product && (
                     <>

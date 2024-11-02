@@ -28,10 +28,14 @@ body.dark {
 ::-webkit-scrollbar-thumb {
     width: 5px;
     border-radius: 50px;
-    background-color: var(--main-purple);
+    background-color: #8a8a8ac0;
     height: 7px;
+    opacity: 0;
 }
 
+*:hover::-webkit-scrollbar-thumb {
+    opacity: 1;
+}
 
 .container {
     max-width: 1200px;

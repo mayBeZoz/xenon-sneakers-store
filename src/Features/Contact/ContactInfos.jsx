@@ -7,7 +7,7 @@ import mapImg from "../../Assets/Images/map.png"
 const ContactInfos = () => {
     
     return (
-        <div className=' md:w-1/2 text-main-black md:h-full p-2  min-h-[300px] flex flex-col'>
+        <div className=' md:w-1/2 text-main-black md:h-full gap-2 p-2 justify-between min-h-[300px] flex flex-col'>
             <div className="flex my-2 items-center text-xl">
                 <span>
                     <img className='w-6 mr-2 aspect-square object-contain' src={mailIcon} alt="" />
@@ -29,7 +29,8 @@ const ContactInfos = () => {
                 <span>egypt ,cairo </span>
             </div>
 
-            <img className='w-full mt-2 flex-1 object-contain' src={mapImg} alt="img" />
+            <img className='w-full mt-2 flex-1 md:h-full object-contain' src={mapImg} alt="img" />
+            
         </div>
     )
 }

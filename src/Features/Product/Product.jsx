@@ -15,7 +15,7 @@ const Product = ({product}) => {
     return (
         <Link
             to={`/${product.category.toLowerCase()}/${product.id}`}
-            className={`flex product w-full flex-col`}
+            className={`flex product w-full flex-col hover:bg-zinc-200 duration-200 hover:scale-105 p-2 rounded-lg`}
         >
             
             <div className={`aspect-square  border-transparent ${isProductInCart && "!border-main-purple"} border-2 border-solid rounded-lg overflow-hidden w-full mb-2 relative`}>
@@ -54,7 +54,7 @@ const Product = ({product}) => {
             </div>
 
             <div className='w-full flex justify-between items-center'>
-                <p className='text-xl font-bold font-jost'>
+                <p className='text-xl font-bold font-jost text-main-purple'>
                     {getProductStarsRate(product)}
                 </p>
             </div>
