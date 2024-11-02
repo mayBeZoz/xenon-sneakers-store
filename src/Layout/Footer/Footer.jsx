@@ -23,9 +23,9 @@ const Footer = () => {
                     {
                         Object.keys(socialsList).map((key,idx) => (
                             <li className='mb-1 text-xl' key={idx}>
-                                <Link to={socialsList[key]}>
+                                <a href={socialsList[key]}>
                                     {key}
-                                </Link>
+                                </a>
                             </li>
                         ))
                     }
